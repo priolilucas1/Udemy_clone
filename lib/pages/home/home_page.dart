@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:udemy_clone/breakpoints.dart';
 import 'package:udemy_clone/pages/home/widgets/app_bar/mobile_app_bar.dart';
 import 'package:udemy_clone/pages/home/widgets/app_bar/web_app_bar.dart';
+import 'package:udemy_clone/pages/home/widgets/sections/top_section.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -9,6 +10,7 @@ class HomePage extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         return Scaffold(
+          backgroundColor: Colors.black,
           appBar: constraints.maxWidth < mobileBreakpoint
               ? PreferredSize(
                   child: MobileAppBar(),
@@ -19,6 +21,16 @@ class HomePage extends StatelessWidget {
                   preferredSize: Size(double.infinity, 72),
                 ),
           drawer: constraints.maxWidth < mobileBreakpoint ? Drawer() : null,
+          body: Center(
+            child: ConstrainedBox(
+              constraints: BoxConstraints(maxWidth: 1400),
+              child: ListView(
+                children: [
+                  TopSection(),
+                ],
+              ),
+            ),
+          ),
         );
       },
     );

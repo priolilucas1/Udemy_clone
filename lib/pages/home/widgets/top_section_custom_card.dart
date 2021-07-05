@@ -5,15 +5,43 @@ class TopSectionCustomCard extends StatelessWidget {
   final double width;
   final double titleSize;
   final double descriptionSize;
+  final bool isMobile;
 
   const TopSectionCustomCard({
     required this.width,
     required this.titleSize,
     required this.descriptionSize,
+    this.isMobile = false,
   });
 
   @override
   Widget build(BuildContext context) {
+    if (isMobile) {
+      return Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Aprenda Flutter com este curso',
+            style: TextStyle(
+              fontSize: titleSize,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            'Bora aprender Flutter com o professor Lucas Prioli! Cursos por apenas R\$22,90. Qualidade garantida.',
+            style: TextStyle(
+              fontSize: descriptionSize,
+              color: Colors.white,
+            ),
+          ),
+          const SizedBox(height: 16),
+          CustomSearchField(),
+        ],
+      );
+    }
+
     return Card(
       color: Colors.black,
       elevation: 8,

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:udemy_clone/breakpoints.dart';
 import 'package:udemy_clone/pages/home/widgets/app_bar/mobile_app_bar.dart';
 import 'package:udemy_clone/pages/home/widgets/app_bar/web_app_bar.dart';
+import 'package:udemy_clone/pages/home/widgets/sections/advantages_section.dart';
+import 'package:udemy_clone/pages/home/widgets/sections/courses_section.dart';
 import 'package:udemy_clone/pages/home/widgets/sections/top_section.dart';
 
 class HomePage extends StatelessWidget {
@@ -27,6 +29,8 @@ class HomePage extends StatelessWidget {
               child: ListView(
                 children: [
                   TopSection(),
+                  AdvantagesSection(),
+                  CoursesSection(),
                 ],
               ),
             ),

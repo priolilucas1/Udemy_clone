@@ -14,7 +14,7 @@ class CourseItem extends StatelessWidget {
         const SizedBox(height: 4),
         Flexible(
           child: AutoSizeText(
-            'Aprende Responsividade Com Flutter',
+            'Aprenda Responsividade Com Flutter',
             minFontSize: 3,
             style: TextStyle(
               fontWeight: FontWeight.bold,

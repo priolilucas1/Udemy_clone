@@ -1,6 +1,6 @@
 # udemy_clone
 
-A new Flutter project.
+Udemy Clone provided by Daniel Ciolfi through Udemy.
 
 ## Getting Started
 

@@ -6,7 +6,7 @@ class MobileAppBar extends StatelessWidget {
     return AppBar(
       title: Container(
         height: 35,
-        child: Image.asset('images/flutter_icon.png'),
+        child: Image.asset('images/udemy.png'),
       ),
       centerTitle: true,
       actions: [

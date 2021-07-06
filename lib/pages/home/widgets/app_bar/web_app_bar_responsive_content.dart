@@ -39,21 +39,21 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 ),
               ),
               if (constraints.maxWidth >= 400) ...[
-                const SizedBox(width: 24),
+                const SizedBox(width: 16),
                 TextButton(
                   onPressed: () {},
                   child: Text(
-                    'Aprender',
+                    'Udemy for Business',
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
               ],
               if (constraints.maxWidth >= 500) ...[
-                const SizedBox(width: 8),
+                const SizedBox(width: 18),
                 TextButton(
                   onPressed: () {},
                   child: Text(
-                    'Flutter',
+                    'Ensine na Udemy',
                     style: TextStyle(color: Colors.white),
                   ),
                 ),

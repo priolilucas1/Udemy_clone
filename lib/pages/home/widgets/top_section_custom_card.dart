@@ -21,7 +21,7 @@ class TopSectionCustomCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Aprenda Flutter com este curso',
+            'Estude para o seu futuro',
             style: TextStyle(
               fontSize: titleSize,
               fontWeight: FontWeight.bold,
@@ -30,7 +30,7 @@ class TopSectionCustomCard extends StatelessWidget {
           ),
           const SizedBox(height: 8),
           Text(
-            'Bora aprender Flutter com o professor Lucas Prioli! Cursos por apenas R\$22,90. Qualidade garantida.',
+            'Comece a correr atrás dos seus objetivos. Cursos a partir de R\$27,90. Qualidade garantida.',
             style: TextStyle(
               fontSize: descriptionSize,
               color: Colors.white,
@@ -51,7 +51,7 @@ class TopSectionCustomCard extends StatelessWidget {
         child: Column(
           children: [
             Text(
-              'Aprenda Flutter com este curso',
+              'Estude para o seu futuro',
               style: TextStyle(
                 fontSize: titleSize,
                 fontWeight: FontWeight.bold,
@@ -60,7 +60,7 @@ class TopSectionCustomCard extends StatelessWidget {
             ),
             const SizedBox(height: 8),
             Text(
-              'Bora aprender Flutter com o professor Lucas Prioli! Cursos por apenas R\$22,90. Qualidade garantida.',
+              'Comece a correr atrás dos seus objetivos. Cursos a partir de R\$27,90. Qualidade garantida.',
               style: TextStyle(
                 fontSize: descriptionSize,
                 color: Colors.white,

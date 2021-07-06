@@ -10,7 +10,7 @@ class WebAppBar extends StatelessWidget {
         children: [
           Container(
             height: 35,
-            child: Image.asset('images/flutter_icon.png'),
+            child: Image.asset('images/udemy.png'),
           ),
           const SizedBox(width: 32),
           WebAppBarResponsiveContent(),

@@ -9,13 +9,13 @@ class TopSection extends StatelessWidget {
       builder: (context, constraints) {
         final maxWidth = constraints.maxWidth;
 
-        if (maxWidth >= 1200) {
+        if (maxWidth >= tabletBreakpoint) {
           return AspectRatio(
-            aspectRatio: 3.2,
+            aspectRatio: 3.7,
             child: Stack(
               children: [
                 AspectRatio(
-                  aspectRatio: 3.6,
+                  aspectRatio: 4,
                   child: Image.network(
                     'https://images.pexels.com/photos/17663/pexels-photo.jpg?cs=srgb&dl=pexels-adrianna-calvo-17663.jpg&fm=jpg',
                     fit: BoxFit.cover,
